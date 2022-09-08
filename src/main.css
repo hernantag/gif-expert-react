@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Helvetica, Arial,  sans-serif;
+}
+:root{
+    --fs:#2B2E4A;
+    --sc:#E84545;
+    --td:#903749;
+    --fh:#53354A;
+    --fih:#3FC1C9;
+}
+body{
+    background-color:var(--fs) ;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header,.search-container,.searchs{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.searchs{
+    margin-top: 15px;
+    background-color: var(--td);
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    flex-wrap:wrap ;
+}
+
+.searchsItem{
+    /* font-weight: bold; */
+    color: #fff;
+    margin: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+}
+.searchsItem .material-symbols-outlined{
+    color: var(--sc);
+    background-color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius:7px ;
+    border: 2px solid #fff;
+    margin-left: 10px;
+}
+.header{
+    height: 80px;
+    align-items: center;
+}
+.search-container{
+    padding-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header img{
+    height: 50%;
+}
+.header h1{
+    padding-left:5px ;
+    font-size: 2rem;
+}
+.form-search{
+    display: flex;
+    flex-direction: column;
+}
+.form-search input{
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+.form-search input::placeholder{
+    font-size: 1.1rem;
+
+}
+.form-search input:focus{
+    outline: none;
+}
+
+.gifs-grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-header{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+.grid-header .material-symbols-outlined{
+    font-size: 2.8rem;
+    color: var(--sc);
+}
+.grid-header h2{
+    font-size: 1.8rem;
+}
+.gif-item{
+    border-radius: 8px;
+    overflow: hidden;
+    margin:10px 0 0px 10px;
+    height: 250px;
+}
+.gif-item img{
+    height: 100%;
+}
